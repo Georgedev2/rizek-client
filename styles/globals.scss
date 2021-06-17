@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Raleway&display=swap');
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ol,
+ul {
+  list-style: none;
+  padding: 0;
+  //margin: 0;
+}
+
+/*--------for google translate-----------*/
+
+.goog-te-gadget {
+  font-size: 0px !important ;
+}
+.goog-logo-link {
+  display: none;
+}
+
+.goog-te-gadget .goog-te-combo {
+  margin: 0;
+  background-color: #e9e9e9;
+}
+//goog-te-banner-frame skiptranslate
+
+.goog-te-banner-frame {
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.btn {
+  padding: 7px 20px;
+  outline: none;
+  color: #616161;
+  cursor: pointer;
+  border: 1px solid #ccc;
+}
+.x {
+  color: red;
+}

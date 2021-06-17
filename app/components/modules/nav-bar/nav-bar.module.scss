@@ -1,0 +1,51 @@
+@import '../../../../styles/variables', '../../../../styles/mixins';
+
+.navBar {
+  //  background-color: #fff;
+  padding: 5px 0;
+}
+
+.navBar > div:nth-child(1) {
+  margin: auto;
+  width: $page-width;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+
+#rezik_Logo {
+  display: inline-block;
+  width: 90px;
+  height: 30px;
+  @include background(url('/images/rizek-logos/dark-rizek-logo.svg'), no-repeat, contain);
+  background-position: center;
+}
+.logobox {
+  margin: 0 15px 0 0;
+}
+
+.cartWrapper {
+  display: flex;
+  align-items: center;
+}
+.cartWrapper > span {
+  margin: 0 15px;
+}
+.navBarLogoWrapper {
+  display: flex;
+  align-items: center;
+}
+/*---- BREAK POINT FOR SMALL SCREEN 960px------ */
+@media (max-width: 960px) {
+  .navBar > div:nth-child(1) {
+    width: $mobile-width;
+  }
+
+  .headerService {
+    display: none;
+  }
+  .blog {
+    display: none;
+  }
+}

@@ -1,0 +1,12 @@
+.list > li {
+  color: lightgray;
+  font-size: 14px;
+  margin: 7px 0;
+  cursor: pointer;
+}
+.list > li:hover {
+ text-decoration: underline;
+}
+#firstChild {
+  color: #fff;
+}

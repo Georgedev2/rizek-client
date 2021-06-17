@@ -1,0 +1,14 @@
+.btn {
+  padding: 7px 20px;
+  outline: none;
+  color: #616161;
+  cursor: pointer;
+  border: 1px solid #ccc;
+}
+
+
+@media (max-width: 600px) {
+  .btn {
+    padding: 5px 10px;
+  }
+}

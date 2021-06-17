@@ -1,0 +1,108 @@
+@import '../../../../../styles/variables';
+
+.subscribe {
+  padding: 24.3px 24px 24.7px;
+  background-color: #0099cc;
+  margin: auto;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.subscribe_title {
+  margin-bottom: 18px;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.bdy {
+  margin-bottom: 16px;
+}
+.subscribe_title,
+.bdy {
+  color: $secondary-color;
+}
+.subscribe > form {
+  display: flex;
+  width: 65%;
+ // justify-content: flex-end;
+  align-items: center;
+}
+.terms {
+  margin-top: 5px;
+}
+
+.terms > a {
+  text-decoration: underline;
+  margin-left: 10px;
+}
+.terms span,
+.terms > a {
+  font-size: 10px;
+  color: $secondary-color;
+}
+
+.textinput {
+  border: 1px solid #0099cc;
+  width: 100%;
+}
+.subscribe_btn {
+  margin-left: 30px;
+  text-align: center;
+  border: 1px solid $secondary-color;
+  border-radius: 5px;
+  padding: 10px 35px;
+  cursor: pointer;
+  color: $secondary-color;
+}
+.subscribe_btn:hover {
+  box-shadow: 0 0 5px #eee;
+}
+
+
+/* ------BREAK POINTS AT 1280px----- */
+@media (max-width: 1280px) {
+
+  .subscribe > form {
+    width: 75%;
+  }
+}
+
+/* ------BREAK POINTS AT 900px----- */
+@media (max-width: 900px) {
+  .subscribe {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* ------BREAK POINTS AT 600px----- */
+@media (max-width: 600px) {
+ 
+  .subscribe {
+    width: $mobile-width;
+  }
+  .subscribe_title {
+    font-size: 23px;
+  }
+  .bdy {
+    font-size: 13px;
+  }
+  .terms span,
+  .terms > a {
+    font-size: 11px;
+  }
+  .subscribe > form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: column;
+  }
+  .subscribe_btn_box {
+    margin: 15px 0px 0 0;
+  }
+
+  .subscribe_btn {
+    width: 100%;
+    margin: 15px 0 0 0;
+  }
+}

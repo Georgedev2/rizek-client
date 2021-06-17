@@ -1,0 +1,131 @@
+@import '../../../../styles/variables', '../../../../styles/mixins';
+
+.footerWrapper {
+  background-image: url('/images/rizek-home-images/new-footer.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footerFirstChild {
+  padding-top: 300px;
+  width: $page-width;
+  margin: 0px auto 47px auto;
+}
+
+.section1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.rizek_logo_desktop,
+.rizek_logo_mobile {
+  background-image: url('/images/rizek-home-images/Rizek-logo-white.png');
+  width: 90px;
+  height: 30px;
+  background-size: cover;
+  margin-bottom: 15px;
+}
+.rizek_logo_mobile {
+  display: none;
+}
+.contact_detail > div:nth-child(1) {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.contact_detail > div:nth-child(2) {
+  margin-bottom: 10px;
+}
+
+.contact_detail > div:nth-child(1),
+.contact_detail > div:nth-child(2),
+.contactDetails > div:nth-child(3) {
+  color: #fff;
+  font-size: 14px;
+}
+
+.address {
+  margin-top: 30px;
+}
+.address span {
+  color: #fff;
+  font-size: 14px;
+}
+.address > span:nth-child(1) {
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+/*----- STYLING OF THE REZIK MOBILE APP ICONS----- */
+.getRezikMobile {
+  margin-top: 15px;
+}
+
+.getRezikMobile > div:nth-child(1) {
+  color: #fff;
+  margin-bottom: 23px;
+}
+
+.PlayStoreIcon {
+  width: 135px;
+  height: 40px;
+
+  background: #0d2b5d;
+  border: 0.5px solid #ffffff;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+/*----- STYLING OF FOOTER LAST CHILD ---- */
+.footerLastChild {
+  width: 93%;
+  border-top: 1px solid #d8d8d8;
+  margin: auto;
+}
+.footerLastChild > div {
+  width: $desktop-width;
+  margin: 0 auto;
+}
+.social_icons {
+  width: $page-width;
+
+  display: flex;
+  margin: 20px 0;
+}
+.ToTop {
+  cursor: pointer;
+  margin: 20px 0;
+  font-size: 14px;
+  font-weight: bold;
+  color: lightgray;
+}
+.ToTop:hover {
+  color: #eee;
+}
+.rizek_logo_mobile {
+  display: none;
+}
+@media (max-width: 960px) {
+  .footerFirstChild {
+    padding-top: 150px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footerFirstChild {
+    padding-top: 150px;
+  }
+
+  .rizek_logo_desktop {
+    display: none;
+  }
+  .rizek_logo_mobile {
+    display: block;
+  }
+  .contact_detail {
+    display: none;
+  }
+  .ToTop {
+    display: none;
+  }
+}

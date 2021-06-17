@@ -1,0 +1,27 @@
+.cart {
+  position: relative;
+  margin: 0 15px;
+}
+.cartLogo {
+  width: 30px;
+  height: 30px;
+ // background-image: url('/images/rizek-home-images/shopping-basket.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.cartQty{
+  position: absolute;
+  background-color: #fc4949;
+  top: -8px;
+  left: 20px;
+  border-radius: 50%;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  font-size: 9px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}

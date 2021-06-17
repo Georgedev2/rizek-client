@@ -1,0 +1,95 @@
+/* ------ STYLING OF THE COMMUNITY UPDATE----- */
+@import '../../../../styles/variables';
+
+.communityUpdate {
+  background-color: #f9df99;
+}
+.communityUpdate > div {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+
+  padding: 5px 0;
+  margin: auto;
+  align-items: center;
+}
+.news {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.updateIcon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url('/images/rizek-home-images/notice-icon.png');
+  background-size: cover;
+  //background-position: left;
+  margin: 0px 10px 0 0px;
+}
+
+.learnMore {
+  text-decoration: underline;
+  display: inline-block;
+  margin-left: 25px;
+  font-size: 15px;
+  text-decoration: none;
+  margin-left: 11px;
+}
+
+.learnMore:hover,
+.closeBtn:hover {
+  color: #09a8dd;
+  transform: scale(1.1);
+}
+
+.closeBtn {
+  cursor: pointer;
+}
+.communityUpdateNewBg {
+  background-color: lightblue;
+}
+
+/*---- BREAK POINT FOR SMALL SCREEN 960px------ */
+@media (max-width: 960px) {
+  .communityUpdate > div {
+    align-items: flex-start;
+  }
+
+  .learnMore {
+    font-size: 12px;
+    margin-left: 35px;
+  }
+}
+
+/* ------BREAK POINTS FOR EXTRAL SMALL SCREEM 600px----- */
+@media (max-width: 600px) {
+  .communityUpdate > div {
+    width: $mobile-width;
+  }
+  .updateIcon {
+    margin-top: 2px;
+  }
+}
+/* ------BREAK POINTS  500px----- */
+@media (max-width: 500px) {
+  .learnMore {
+    margin-left: 35px;
+  }
+}
+/* ------BREAK POINTS  350px----- */
+@media (max-width: 350px) {
+  .news {
+    font-size: 12px;
+  }
+}
+
+/* ------BREAK POINTS  280px----- */
+@media (max-width: 280px) {
+  .updateIcon {
+    display: none;
+  }
+  .learnMore {
+    margin-left: 0px;
+  }
+}

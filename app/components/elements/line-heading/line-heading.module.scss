@@ -1,0 +1,17 @@
+
+.title {
+  display: flex;
+  align-items: center;
+}
+.line {
+  background: #09a8dd;
+  width: 70px;
+  height: 2px;
+  display: inline-block;
+  margin-right: 10px;
+}
+.label {
+  font-weight: 600;
+  font-size: 14px;
+  color: #09a8dd;
+}

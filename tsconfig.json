@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve"
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "redux/store.js",
+    "redux/reducers/rootReducer.js",
+    "redux/types.js"
+  ],
+  "exclude": ["node_modules"],
+  "baseUrl": "app",
+  "allowJs": true,
+  "paths": {
+    "@app/*": ["*"],
+    "@components/*": ["components/*"],
+    "@elements/*": ["components/elements/*"],
+    "@modules/*": ["components/modules/*"],
+    "@templates/*": ["components/templates/*"],
+    "@lib/*": ["lib/*"]
+  }
+}

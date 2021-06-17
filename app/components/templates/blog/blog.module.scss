@@ -1,0 +1,158 @@
+@import '../../../../styles/variables', '../../../../styles/mixins';
+
+.blog {
+  background-color: $secondary-color;
+  position: relative;
+}
+
+.nav_bar_wrapper {
+  background-color: transparent;
+  position: absolute;
+  top: 41px;
+  right: 0;
+  width: 100%;
+  z-index: 100;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
+  backdrop-filter: blur(13.5914px);
+}
+
+.blogBanner {
+  background-image: url('/images/blog-assets/Hero.png');
+  height: 625px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-bottom: 120px;
+}
+
+.workplace_safty {
+  max-width: 450px;
+  height: 210px;
+  padding: 24px 37px 24px 24px;
+  border-radius: 5px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  bottom: -80px;
+  left: 140px;
+}
+
+.rizek_news {
+  border-right: 1px solid $primary-color;
+  color: #3d3d3d;
+  padding-right: 10px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.beauty {
+  padding-left: 10px;
+  color: $primary-color;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.text {
+  font-size: 30px;
+  font-weight: bold;
+  color: #111029;
+  font-size: 25px;
+}
+.date {
+  color: #6b6b6b;
+  font-size: 14px;
+}
+
+/* =========MAIN BLOCK========= */
+.main_block {
+  width: 80%;
+  width: $desktop-width;
+  margin: auto;
+}
+.blog_search {
+  width: 50%;
+  margin: 0px auto 30px auto;
+  box-shadow: 0 0 1.2px gray;
+  display: none !important;
+}
+.Subscribe_wrapper {
+  display: none;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0px auto;
+}
+.more {
+  display: none;
+}
+.more button {
+  background-color: $primary-color;
+  color: $secondary-color;
+}
+
+/* ------BREAK POINTS FOR iPAD PRO 1280px----- */
+@media (max-width: 1280px) {
+  .cards {
+    width: 80%;
+    width: $desktop-width;
+  }
+}
+
+/* ------BREAK POINTS FOR  SMALL SCREEM 900px----- */
+@media (max-width: 960px) {
+  .blogBanner {
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 0 0 80px;
+    height: 400px;
+  }
+  .main_block {
+    width: $mobile-width;
+  }
+}
+/* +++++ STARED USING MOBILE WITH FROM 600px AND BELOW ++++++ */
+/* ------BREAK POINTS FOR EXTRAL SMALL SCREEM 600px----- */
+
+@media (max-width: 600px) {
+  .blogBanner {
+    background-image: url('/images/blog-assets/blog-banner-625kb.png');
+  }
+  .workplace_safty {
+    width: $mobile-width;
+    left: 30px;
+  }
+  .blog_search {
+    width: $mobile-width;
+    display: flex !important;
+  }
+  /* ---------CARD--------- */
+  .cards {
+    width: 93%;
+    margin: 10px auto;
+  }
+  /* -------MORE-------- */
+  .more {
+    width: 100%;
+    margin: 20px auto;
+    display: block;
+  }
+  .more button {
+    width: 100%;
+  }
+}
+
+/* ------ BREAK POINTS FOR EXTRAL EXTRAL SMALL SCREEM 450px----- */
+@media (max-width: 450px) {
+  .workplace_safty {
+    bottom: -50px;
+    left: 10px;
+  }
+  .cards {
+    flex-direction: column;
+  }
+}

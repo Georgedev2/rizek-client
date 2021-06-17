@@ -1,0 +1,83 @@
+@import '../../../../styles/variables';
+.pre_footer {
+  margin-bottom: -205px;
+  padding-bottom: 100px;
+  padding-top: 30px;
+  min-height: 650px;
+  background-image: url('/images/rizek-home-images/pre-footer-image.png');
+}
+.pre_footer > div {
+  width: $page-width;
+  margin: 10px auto 20px auto;
+  display: flex;
+}
+
+.pre_footer_firstChild {
+  width: 55%;
+}
+.textstyle {
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+.lineColor {
+  background-color: #fff;
+  width: 45px;
+}
+.rizek_discount {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 72px;
+  font-style: normal;
+  line-height: 84px;
+  letter-spacing: -0.5px;
+  color: #fff;
+}
+
+.get_rizek_app {
+  font-family: 'Open Sans', sans-serif;
+  color: lightgray;
+  font-size: 20px;
+  margin: 46px 0;
+}
+
+.PlayStoreIcons {
+  display: flex;
+  flex-wrap: wrap;
+}
+.PlayStoreIcons > div {
+  width: 145px;
+  height: 50px;
+}
+
+.phone {
+  height: 500px;
+}
+.phone img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* ------BREAK POINTS FOR EXTRAL SMALL SCREEM 600px----- */
+@media (max-width: 600px) {
+  .pre_footer {
+    min-height: 580px;
+  }
+  .rizek_discount {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+  .get_rizek_app {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  .PlayStoreIcons > div {
+    width: 129px;
+    height: 39px;
+    margin-bottom: 8px;
+  }
+  .phone {
+    height: 350px;
+  }
+}

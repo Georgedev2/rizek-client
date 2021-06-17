@@ -1,0 +1,215 @@
+@import '../../../../styles/variables', '../../../../styles/mixins';
+
+.home {
+  background-color: #eaeaea;
+}
+.nav {
+  background-color: #fff;
+}
+/* ============ health_care_service======== */
+.health_care_service {
+  border-radius: 7px;
+  position: relative;
+  margin: 20px auto 50px auto;
+}
+.health_care_service img {
+  width: 100%;
+}
+.wrapper {
+  margin: 10px auto 20px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.services {
+  width: $desktop-width;
+  margin: 10px auto 20px auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: -100px;
+  background-color: #fff;
+  border-radius: 5px;
+
+  ////////////////////////
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+  width: 23%;
+  padding: 10px;
+  scroll-snap-align: start;
+}
+.service > div:nth-child(1) img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+.service > div:nth-child(2) {
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: #304659;
+  text-transform: uppercase;
+  font-size: 11px;
+}
+.service > div:nth-child(3) {
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  .service {
+    width: 70%;
+    margin: 10px;
+  }
+}
+.main {
+  width: $desktop-width;
+  margin: auto;
+}
+/* ============ STEP CARDS=============== */
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+  text-align: center;
+  border-radius: 5px;
+  flex: 0 0 27%;
+  padding: 10px;
+}
+.step_img {
+  width: 110px;
+  height: 110px;
+}
+.stepNo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0aa8dd;
+}
+
+.stepTitle {
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 2.5;
+  color: #000000;
+}
+
+.cardContent {
+  font-size: 14px;
+  line-height: 1.75;
+  text-align: center;
+  color: #707070;
+}
+
+.heading {
+  font-size: 50px;
+  margin-top: 10px;
+  font-weight: bolder;
+}
+.image1 {
+  background-image: url('/images/rizek-home-images/stepbg.png');
+}
+
+.image {
+  background-image: url('/images/rizek-home-images/faq-left-image.png');
+  width: 150px;
+  height: 150px;
+}
+.image,
+.image1 {
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 20px;
+}
+.image1 {
+  width: 120px;
+  height: 120px;
+}
+.button {
+  padding: 8px;
+  border-radius: 3px;
+  background-color: #09a8dd;
+}
+.readMore {
+  width: $desktop-width;
+  margin: 8px auto 40px auto;
+}
+/* ------BREAK POINTS FOR EXTRAL SMALL SCREEM 600px----- */
+@media (max-width: 600px) {
+  .heading {
+    font-size: 20px;
+  }
+  .image,
+  .image1 {
+    width: 85px;
+    height: 85px;
+  }
+}
+/* ======== BLOG CARDS====================== */
+.cards {
+  margin: 0px auto 50px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card {
+  flex: 0 0 30%;
+  border-radius: 7px;
+  margin: 1rem;
+}
+.card img {
+  width: 100%;
+  height: 217px;
+  object-fit: cover;
+}
+
+.card > div:nth-child(2) {
+  margin: 16px 0 0;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #111029;
+}
+.card > div:nth-child(3) {
+  font-size: 15px;
+  color: #707070;
+  line-height: 1.5;
+  padding-bottom: 15px;
+}
+
+/* ------BREAK POINTS FOR MEDIUM SCREEM 1280px----- */
+@media (max-width: 1280px) {
+  .card {
+    flex: 0 0 28%;
+  }
+}
+
+/* ------BREAK POINTS FOR SMALL SCREEM 960px----- */
+@media (max-width: 982px) {
+  .card {
+    flex: 0 0 45%;
+  }
+}
+/* ------BREAK POINTS FOR EXTRAL SMALL SCREEM 600px----- */
+@media (max-width: 768px) {
+  .card {
+    flex: 0 0 43%;
+  }
+}
+@media (max-width: 600px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  .card {
+    flex: 0 0 100%;
+  }
+}

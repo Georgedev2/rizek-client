@@ -1,0 +1,20 @@
+@import '../../../../styles/variables', '../../../../styles/mixins';
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 5px;
+  background-color: $accents-1;
+}
+
+.header > div {
+  margin: 0 7px;
+}
+
+/* ------BREAK POINTS FOR EXTRAL SMALL SCREEM 600px----- */
+@media (max-width: 600px) {
+  .header {
+    display: none;
+  }
+}
